@@ -2,7 +2,7 @@
 
 ## Description
 This project is a real-time driver drowsiness monitoring system that uses Mediapipe for eye detection and simpleaudio for alarm playback.  
-It detects whether the eyes are open or closed, displays the status on screen, and plays an alarm (`alarm.wav`) if eyes remain closed too long (e.g 4-5 seconds).
+It detects whether the eyes are open or closed, displays the status on screen, and plays an alarm (`alarm.wav`) if eyes remain closed too long (e.g 5-6 seconds).
 
 This repository includes a **testbench folder** with all the necessary files to set up and run the project.
 
@@ -11,18 +11,19 @@ This repository includes a **testbench folder** with all the necessary files to 
 ## Features
 - Real-time webcam monitoring  
 - Eye open/closed detection using Mediapipe Face Mesh  
-- Alarm plays automatically when eyes are closed longer than 1 second  
+- Alarm plays automatically when eyes are closed longer than 5 seconds  
 - On-screen status text:
   - Green: Eyes OPEN  
-  - Red: ALERT! Eyes CLOSED  
+  - Green: Eyes CLOSED
+  - Red: ALERT! Eyes closed too long! 
 - Safe quit by pressing **`q`**  
 
 ---
 
 ## Files
-- `driver_monitor_mediapipe.py` — Main Python script  
+- `main.py` — Main Python script  
 - `alarm.wav` — Audio file for alarm (must be in the same folder as the script)  
-- `README.md` — Project documentation  
+- `README.md` — Project documentation
 
 ---
 
