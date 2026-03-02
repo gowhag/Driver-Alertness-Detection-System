@@ -15,7 +15,7 @@ cd driver-monitor
 
 Then run:
 
-python3.10 driver_monitor_mediapipe.py
+python3.10 main.py
 
 ## 4. How to Test
 
